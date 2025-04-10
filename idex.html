@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Music Streaming: il tuo punto di riferimento per un'esperienza musicale senza confini. Scopri playlist personalizzate e un'ampia libreria di brani da ogni genere.">
+  <meta name="keywords" content="music streaming, musica, playlist, rock, pop, jazz, classica, ascolta musica online">
+  <meta name="author" content="Valerio Di Felice">
+  <meta name="robots" content="index, follow">
+  <title>Music Streaming</title>
+</head>
+<body>
+    
+  <!-- Titolo -->
+
+  <h1 align="center">Music Streaming</h1> 
+  <hr>
+    <p align="center">
+    Benvenuto su Music Streaming, il tuo nuovo punto di riferimento per un’esperienza musicale senza confini! <br> 
+    Qui, ogni nota racconta una storia e ogni brano è una scoperta. <br> 
+    Sia che tu sia un appassionato del rock, del pop, del jazz o della musica classica, <br>
+    la nostra piattaforma ti offre una vasta libreria di brani e playlist personalizzate, pensate per accompagnarti in ogni momento della giornata. <br>
+    Lasciati trasportare da un viaggio sonoro unico e scopri come la musica possa trasformare ogni istante in emozione pura.
+    </p>
+        <hr>
+  
+  <!-- Form -->
+  
+    <h2>Registrati ora!</h2>
+  
+    <form action="#" method="post" onsubmit="alert('Registrazione inviata!'); return false;">
+    
+        <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+    
+        <label for="cognome">Cognome:</label><br>
+            <input type="text" id="cognome" name="cognome" required><br><br>
+    
+        <label for="email">Indirizzo Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+    
+        <label for="nascita">Data di Nascita:</label><br>
+            <input type="date" id="nascita" name="nascita" required><br><br>
+    
+        <label for="telefono">Numero di Telefono:</label><br>
+            <input type="number" id="telefono" name="telefono" required><br><br>
+    
+    <!-- Sezione per i gusti musicali -->
+
+    <fieldset>
+      <legend>Seleziona i tuoi gusti musicali:</legend>
+      <input type="checkbox" id="rock" name="gusti[]" value="rock">
+      <label for="rock">Rock</label><br>
+      
+      <input type="checkbox" id="pop" name="gusti[]" value="pop">
+      <label for="pop">Pop</label><br>
+      
+      <input type="checkbox" id="jazz" name="gusti[]" value="jazz">
+      <label for="jazz">Jazz</label><br>
+      
+      <input type="checkbox" id="classica" name="gusti[]" value="classica">
+      <label for="classica">Classica</label><br>
+    </fieldset>
+    <br>
+    
+    <!-- Accettazione dei termini e condizioni con radio button -->
+
+    <fieldset>
+      <legend>Accetta i termini e le condizioni:</legend>
+      <input type="radio" id="accetto" name="termini" value="accetto" required>
+      <label for="accetto">Accetto i termini e le condizioni</label><br>
+    </fieldset>
+    <br>
+    
+    <input type="submit" value="Invia registrazione">
+  </form>
+  <hr>
+
+</body>
+</html>
